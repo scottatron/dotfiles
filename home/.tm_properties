@@ -1,0 +1,5 @@
+fontName        = "Menlo"
+fontSize        = 11
+fileBrowserGlob = "{*,.tm_properties,.htaccess,.gitignore,.envrc,.env}"
+tabSize         = 2
+softTabs        = true
