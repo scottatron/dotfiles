@@ -49,6 +49,7 @@
     fi"
 [core]
   autocrlf = input
+  excludesfile = /Users/scott/.gitignore
 [color]
   ui = true
 [help]
@@ -56,5 +57,5 @@
 [push]
  default = simple
 [user]
-	name = Scott Arthur
-	email = scott@scottatron.com
+  name = Scott Arthur
+  email = scott@scottatron.com
