@@ -1,5 +1,9 @@
-fontName        = "Menlo"
-fontSize        = 11
-fileBrowserGlob = "{*,.tm_properties,.htaccess,.gitignore,.envrc,.env}"
-tabSize         = 2
-softTabs        = true
+fontName = "Source Code Pro"
+fontSize = 11
+include  = "{*,.tm_properties,.env,.gitignore,.htaccess,.envrc}"
+tabSize  = 2
+softTabs = true
+
+# http://wiki.macromates.com/Reference/Settings
+# http://wiki.macromates.com/Reference/FolderSpecificSettings
+# https://gist.github.com/dvessel/1478685
