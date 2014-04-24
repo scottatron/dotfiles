@@ -3,3 +3,8 @@ function serve {
   ruby -run -e httpd . -p $port
 }
 
+function gitignore () {
+  for i in "$@"; do
+    echo $i >> .gitignore
+  done
+}
