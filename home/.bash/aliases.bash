@@ -26,3 +26,6 @@ __git_complete gp _git_push
 if [[ -z $(uname -a | grep -o Darwin) ]]; then
   alias ls='ls --color=auto'
 fi
+
+# VirtualBox
+alias vb="VBoxManage"
