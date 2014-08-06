@@ -1,8 +1,12 @@
-fontName = "Source Code Pro"
-fontSize = 11
-include  = "{*,.tm_properties,.env,.gitignore,.htaccess,.envrc}"
-tabSize  = 2
-softTabs = true
+fontName             = "SourceCodePro-Regular"
+fontSize             = 11
+include              = "{*,.tm_properties,.env,.gitignore,.htaccess,.envrc,.rspec,}"
+excludeInFileChooser = "{node_modules,}"
+tabSize              = 2
+softTabs             = true
+
+TM_RUBY = "$HOME/.rbenv/shims/ruby"
+PATH    = "$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 
 # http://wiki.macromates.com/Reference/Settings
 # http://wiki.macromates.com/Reference/FolderSpecificSettings
