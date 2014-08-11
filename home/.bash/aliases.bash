@@ -5,7 +5,17 @@ alias be="bundle exec"
 
 
 # Git aliases
-# Completion tip: http://stackoverflow.com/a/15009611
+# Check for Git completion functions first
+if $(type __git_complete 2>&1 | grep -q 'not found'); then
+  echo "No Git completion found, installing..."
+  _git_completion="~/.bash/git-completion.bash"
+  if ! [[ -f $_git_completion ]]; then
+    git_version=$(git --version | awk '{print $3}')
+    curl -o $_git_completion -L "https://raw.githubusercontent.com/git/git/${git_version}/contrib/completion/git-completion.bash"
+  fi
+  source $_git_completion
+fi
+# Source: http://stackoverflow.com/a/15009611
 alias gs="git status"
 alias gd="git diff"
 __git_complete gd _git_diff
