@@ -7,12 +7,11 @@ alias be="bundle exec"
 # Git aliases
 # Check for Git completion functions first
 if $(type __git_complete 2>&1 | grep -q 'not found'); then
-  echo "No Git completion found, installing..."
   _git_completion="${HOME}/.bash/git-completion.bash"
   if [[ ! -f $_git_completion ]]; then
     git_version=$(git --version | awk '{print $3}')
     url="https://raw.githubusercontent.com/git/git/v${git_version}/contrib/completion/git-completion.bash"
-    echo "from $url"
+    echo "No Git completion found, installing from $url"
     curl -sLo $_git_completion $url
   fi
   source $_git_completion
