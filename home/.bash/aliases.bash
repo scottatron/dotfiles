@@ -38,9 +38,13 @@ else
 fi
 
 
-# NON-OSX aliases
+# ls colours
 if [[ -z $(uname -a | grep -o Darwin) ]]; then
+  # gnu ls
   alias ls='ls --color=auto'
+else
+  # bsd ls (osx)
+  alias ls='ls -G'
 fi
 
 # VirtualBox
