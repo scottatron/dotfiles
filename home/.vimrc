@@ -45,7 +45,12 @@ set shiftwidth=2
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" Required
 Plugin 'gmarik/Vundle.vim'
+
+Plugin 'chriskempson/base16-vim'
 
 call vundle#end()
 filetype plugin indent on
+
+colorscheme base16-default
