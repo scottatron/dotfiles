@@ -38,3 +38,14 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,Procfile,Guardfile,
 set expandtab
 set tabstop=2
 set shiftwidth=2
+
+"
+" VUNDLE
+"
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
+call vundle#end()
+filetype plugin indent on
